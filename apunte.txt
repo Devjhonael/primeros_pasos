@@ -1,0 +1,61 @@
+* elemento bloqueante ocupa todo el espacio de su elemento padre
+- li,ul,form,h,section.article,nav,header,div,oletc  son bloqueante
+
+* elemento en linea ocupa todo el espacio de su contendo
+- a, span,button,i,strong,em,img,input
+- a, span, label, strong, br, input, textarea, abbr, acronym, b, basefont, bdo, big, cite, code, dfn, em, font, i, kbd, q, s, samp, select, small, strike, sub, sup, u, u, var
+- son apilables. no tienen ni margin-top ni margin-bottom (por mucho que se lo indiques en el CSS). Si tienen margin-left y margin-right.
+- no respetan ni width ni height. Estas medidas dependerán del tamaño en píxels de su contenido
+
+-convierte un elemento en linea a un elemento bloqueando con todos sus atributos display:block;
+- unicamente  section{display:inline-block;width:33%;} tiene un ordenamiento mas comodo
+
+
+* css = disenar con codigo
+- el estilo que se coloca al final le gana al del principio pero en si solamente se chanta los valores que se van a cambiar ejm
+body{
+    background-color: red;
+    color: white;
+}
+
+
+body{
+    color: green;
+}
+=> lo que va afectar o se va reescribir es el el atributo color xk es el unico que esta sufriendo cambios entiendes
+- no es bueno par crear correos electronicos para eso usar algunos build que se encargaran de arrastras y crear los correos electronico OJO 
+
+para normalizar usamos normalize 
+no se usa etiquetass para usar css solo clases
+- todas las etiquetas deben tener clases 
+- gracias a ello podemos tener clases con las especificaciones correctas y solo aplicamos a las etiquetas
+- por buenas practicas no es bueno isar los selectores ni tampocos los id si no solamente clases
+- selectores agrupados es compartir atributos con otras clases osea como modulos
+aplica ese atributo a todos las etiquetas que tengan las clases 
+.p-first,
+.p-second{
+    color: red;
+}
+.p{
+    background-color: aqua;
+}
+
+-aplica este atributo a un elemento que tenga las 2 clases
+
+-.p-first.p-second{
+    color: red;
+}
+
+- tiene que ser una etiqueta p y tbm tiene k tener una clase title si no no se aplica
+p.title{
+    color:red;
+}
+
+selectores compuesto descendiente osea que div>p que p este dentro de un div no importa si esta e el medio o alfondo basta con que este dentro y se aplica los estilos
+
+div p{
+    colore:red
+}
+
+
+selectores con clase

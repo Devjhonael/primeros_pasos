@@ -1,0 +1,50 @@
+/* body{
+    background-color: red;
+    color: white;
+} */
+/* h1,p,form,ul{
+    border:1px solid red
+}
+.espacio{
+    width: 200px;
+}
+button{
+    border: 1px solid blue;
+}
+li,p{
+    border: 2px solid green;
+}
+a,span{
+    border: 2px solid rebeccapurple;
+}
+
+section{display:inline-block;width:33%;
+border: 1px solid red;} */
+
+
+/* body{
+    color: green;
+} */
+ /* img{
+    margin:auto;
+ } */
+
+
+ /** CREACION  DEVARIABLES EN CSS
+ que esta accesible para todo el doc si quisiera solo para un toso de codigo sera un p, h1 etc  */
+:root{
+    /* nombre de variable y el valor */
+    --color:red;
+    --tamano:20px;
+}
+p{
+    background-color:  var(--color);
+    font-size: var(--tamano);
+}
+.p-first,
+.p-second{
+    color: red;
+}
+.p{
+    background-color: aqua;
+}
