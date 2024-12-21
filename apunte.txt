@@ -58,4 +58,59 @@ div p{
 }
 
 
-selectores con clase
+selectores de atributos se usan para seleccionar un elemento en funcion de un atributo cualquera
+
+se usa para los formulario maso menos
+[atributo="valor"]{
+
+}
+
+[input=text],[input=password]{
+    color:red;
+}
+
+que tal los atributos no tienen completo su nombre ^ indicamos que comienze con el nombre de te
+[type^=te]{
+    border:1px solid red;
+}
+
+$que termine con jpg hacer estos estilos
+[href$=jpg]{
+    border:1px solid red;
+}
+
+que contenga ed.team usamos un * como es punto usamos ""
+[href="ed.team"]{
+
+}
+
+hay 4 operadores
+
+* selector universal selecciona todo
+> hijo directo
++ hermano directo
+~ hermanos siguientes
+
+*{
+    color:red;
+}
+todo lo que esta dentro de div colocar estos estilos 
+div *{
+    color:green;
+    
+}
+hijo directo osea dentro del div debe seguirle el p
+div >p{
+    color:green;   
+}
+osea sto quiere decir que tiene que ser hermano siguiente osea despues de un div debe hacer un p en la misma estructura
+div + p{
+    color:green;   
+}
+
+que son hermanos siguientes osea despues de div todos los p que sean hermanos de div directo segun su ramificacion
+div ~ p{
+    color:green;   
+}
+
+
