@@ -48,3 +48,25 @@ p{
 .p{
     background-color: aqua;
 }
+
+/* * aqui manda la declaracion se ejecuta por casca aqui no abajo */
+@layer theme;
+@layer base;
+@layer color;
+
+@layer theme{
+    body{
+
+        color:blue;
+    }
+}
+@layer base{
+    body {
+
+        color:orange;
+    }
+}
+
+/* div{
+    display: inline o bloque o inline-bloque o none;
+} */

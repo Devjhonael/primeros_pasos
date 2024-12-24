@@ -112,5 +112,79 @@ que son hermanos siguientes osea despues de div todos los p que sean hermanos de
 div ~ p{
     color:green;   
 }
+- mientras mas especifico es una regla ese es el que gana por ejemplo
+h1.title{} aqui indicamos que h1 su clase titile osea bien especifico
+
+https://jonassebastianohlsson.com/specificity-graph/
+aqui colocamos nuestro css y medimos nuestra especificidad
+
+* cascada= lo que esta al final siempre le gana al inicio
+los testilos que viene despues sobre escriben a los estilos anteriores
+colocame los 4 bordes y ahora quitame el de derecha para se usa mas o menos
+
+* para saber que estilos estan colocados dentro de un contendor html podemos ir al anvegador y seccionar ese elemento y ahi podemos ver que elementos y que estilos tiene ese elememento o hacer pruebas super facil
 
 
+*herencia los elemento heredan los estilos de su padre
+    <div class="container">
+      <h2>Lista de tareas</h2>
+      <ul>
+        <li>Estudiar CSS</li>
+        <li>Estudiar JS</li>
+        <li>Estudiar HTML</li>
+      </ul>
+    </div>
+- si al container le pongo colo:red; todo lo que esta dentro sera color red los hijos heredan del padre, se heredan normalemente estilos de texto color, alineacion, centrado, ananio de caja
+no se hereda padding, margin estilos de caja
+
+.container *{
+    border:inherit;
+}
+
+- dice que quiere heredar a la fuerza los estilos del padre caso especiales ejmplo:
+a{
+    colo:inherit;
+}
+-toma el color del padre para que los enlaces no seas de color azul horrible
+
+* layers CSS
+- crear capas y separarlo en capsa para tener mejor esturcturado nuestro css
+- organizo mi codigo css y lo voy agrupando y declarando en los layers
+/* * aqui manda la declaracion se ejecuta por casca aqui no abajo */
+@layer theme;
+@layer base;
+@layer color;
+
+@layer theme{
+    body{
+
+        color:blue;
+    }
+}
+@layer base{
+    body {
+
+        color:orange;
+    }
+}
+
+*modelo de caja box-model
+-todo es una caja en la web 
+- solucionar el layout donde va cdaa elemento y como me aseguro  que estan en el lugar donde deben estar 
+
+el layout model 
+el algoritmo del navegador para entender la geometria de cada elemento HTML luego de procesar el CSS: el tamano, la posicion, la separacion con otros elementos
+
+/* div{
+    display: inline o bloque o inline-bloque o none;
+} */
+inline: lo convierte en linea
+block: ocupada todo el ancho de su padre
+
+
+display: none; = elimina el contenido, la etiqueta y el espacio que ocupaba y los que estan abajo suben
+visibility:hidden; = elimina el contenido , no la etiqueta y si separa el espacio que tenia 
+
+- recuerda las imagenes son inline-block por lo tanto inline que significa en linea y se pone uno al costado de otro entonces asi se pondran las imagenes
+ahora como es inline- block puedo darle un width para que se acomode mejor y recuerda las imagenes son como texto inline-block entonces podemos centrarlo con text-align:center;
+* siempre es asi
