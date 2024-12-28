@@ -187,4 +187,31 @@ visibility:hidden; = elimina el contenido , no la etiqueta y si separa el espaci
 
 - recuerda las imagenes son inline-block por lo tanto inline que significa en linea y se pone uno al costado de otro entonces asi se pondran las imagenes
 ahora como es inline- block puedo darle un width para que se acomode mejor y recuerda las imagenes son como texto inline-block entonces podemos centrarlo con text-align:center;
-* siempre es asi
+* recuerda que se puede centrar elementos inline basta dandole al padre text-align:center
+
+-para centrar un div margin-left:auto; margin-right:auto; 
+*{
+box-sizing:border-box;
+}
+- se usa esta propiedad a todo el doc para cuando tenga un caja y le ponga padding margin border no sume su ancho ni alto actual si no que coja de su propio espacio al interior 
+- .cuadrado{
+    outline:10px solid red;
+}
+el atributo outline hace referencia a lo que esta afuera del elementos su relieve por fuera no por dentro esto se usa mas comunmente en formularios de los input
+
+-box-shadow: h v blur spread color / inset;
+h: movimiento horizontal(positivo derecha )
+v: movimiento vertical (positivo abajo)
+blur: difumidado 
+spread: es que tanto crece o se comprime la sombra en sus cuatro lados
+
+/ las pseudoclases son selectores dinamicos o contextuales. esto significa que su comportamiento va a depender de las circunstancias y siempre usamos los :
+
+- h1:hover{
+    color:red;
+    cursor:pointer;
+}
+a:active = va haer todo lo que esta adentro por que se ejecutara cuando le hagas clip
+a:visited{
+    todo lo que quieres cuando un enlace ya fue visitado
+}
