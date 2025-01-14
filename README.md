@@ -137,7 +137,7 @@ colocame los 4 bordes y ahora quitame el de derecha para se usa mas o menos
         <li>Estudiar HTML</li>
       </ul>
     </div>
-- si al container le pongo colo:red; todo lo que esta dentro sera color red los hijos heredan del padre, se heredan normalemente estilos de texto color, alineacion, centrado, ananio de caja
+- si al container le pongo color:red; todo lo que esta dentro sera color red los hijos heredan del padre, se heredan normalemente estilos de texto color, alineacion, centrado, tananio de caja
 no se hereda padding, margin estilos de caja
 
 .container *{
@@ -146,7 +146,7 @@ no se hereda padding, margin estilos de caja
 
 - dice que quiere heredar a la fuerza los estilos del padre caso especiales ejmplo:
 a{
-    colo:inherit;
+    color:inherit;
 }
 -toma el color del padre para que los enlaces no seas de color azul horrible
 
@@ -220,6 +220,24 @@ a:visited{
 }
 
 
+a:hover = solo si el usuario pasa el cursos sobre el elemento, normalmente en un enlace
+
+:focus = solo interviene si el usuario selecciona el elemento con los controles del teclado.
+
+:active = Selecciona un elemento cuando el usuario lo activa (por ejemplo, con un clic).
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -251,7 +269,7 @@ a:visited{
 // // // + suma
 // // // - resta
 // // // * multiplicacion
-// // // / division parte entera
+// // // / division cociente
 // // // % residuo de una operación de división entera
 
 // // // CONDICIONALES
@@ -638,7 +656,7 @@ a:visited{
 // console.log(`substr: ${subcadena}`);
 
 // /**
-//  * string.substring(posición_inicial, posición_final)
+//  * string.substring(posición_inicial, posición_final-1)
 //  * retorna una subcadena dada una posición inicial y una posición final
 //  * ATENTION: la última posición no es considerada dentro de la subcadena de respuesta
 //  */
@@ -695,7 +713,7 @@ a:visited{
 // arreglo.forEach((nombre) => {
 //   console.log(nombre);
 //   //   en cada vuelta pueden dibujar un producto
-//   // en forma de card en el DOM para un E-COMMERCE
+//   // en forma de card en el DOM para un E-COMMERCE creando una variable contenido
 // });
 
 // // ------ recorriendo peliculas
@@ -1293,6 +1311,8 @@ a:visited{
 // let lista = document.getElementById("lista");
 // let btnGenerar = document.getElementById("btnGenerar");
 
+
+// la diferencia aqui es que hago un click y muestro un valor pero en el anterior hago un click y traigo todos los datos x eso no creamos elementos si un contenido con un forEach
 // btnGenerar.onclick = () => {
 //   /**
 //    * document.createElement("etiqueta_del_elemento")
@@ -1304,7 +1324,7 @@ a:visited{
 //   liTemporal.innerText = numeroAleatorio;
 //   /**
 //    * elemento.setAttribute("nombre_del_atributo","valor_del_atributo")
-//    * Colo un atributo al elemento con un respectivo valor
+//    * Coloca un atributo al elemento con un respectivo valor
 //    * (hablamos de atribbutos HTML ejm: id, class, border, name, value)
 //    */
 //   liTemporal.setAttribute("class", "lista-item");
@@ -1471,8 +1491,8 @@ a:visited{
 //         </div>
 //         <nav class="header__navegacion">
 //           <ul class="header__lista">
-//             <li class="header__item">
-//               <a href="#" class="header__link">Inicio</a>
+//             <li class="header_item">
+//               <a href="#" class="header_link">Inicio</a>
 //             </li>
 //             <li class="header__item">
 //               <a href="#" class="header__link">Cursos</a>

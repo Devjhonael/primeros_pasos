@@ -1,12 +1,14 @@
-const sumar= function(){
-    console.log("hola mis queridas sumas");
-}
+// metodos de los string
 
-sumar();
-
-const resta=()=>{
-    console.log("hola mis queridas restas");
-}
+let nombre="damedebeber";
 
 
-resta();
+console.log(`${nombre.trim()}`);
+console.log(`${nombre.toUpperCase()}`);
+console.log(`${nombre.toLocaleLowerCase()}`);
+console.log(`${nombre.trim().length}`);
+
+
+console.log(`${nombre.substr(1,4)}`);
+
+console.log(`${nombre.substring(1,4)}`);
